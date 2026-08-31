@@ -15,7 +15,7 @@
 
 /****CHILLAX COMPONENTS****/
 @import url("https://warrayquipsome.github.io/Chillax/Components/WindowsButtons.css");
-@import url("https://warrayquipsome.github.io/Chillax/Components/UserArea.css");
+/* UserArea.css intentionally disabled: custom controls are defined below. */
 @import url("https://warrayquipsome.github.io/Chillax/Components/Embeds.css");
 @import url("https://warrayquipsome.github.io/Chillax/Components/ChatArea.css");
 @import url("https://warrayquipsome.github.io/Chillax/Components/ChannelHeader.css");
@@ -3005,3 +3005,179 @@ button[class*="button"] svg,
 /* =========================================================
    END OF CHILLAX CUSTOM MODIFICATIONS
    ========================================================= */
+
+/* =========================================================
+   CUSTOM CHILL THEME SETTINGS
+   ========================================================= */
+
+/* Background image */
+:root {
+    --background-image: var(--wallpaper);
+    --wallpaper: url('https://wallpaperaccess.com/full/2799204.jpg');
+    --modern-dark-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640530071572/97EAEB95-54C2-4AF3-B70B-5E94A851409.jpeg?size=4096');
+    --modern-light-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640760754216/E98F8123-8B98-4961-90D7-DCC497A26E4.jpeg?size=4096');
+}
+
+/* Window */
+:root.theme-dark {
+    --window-margin: 20px;
+    --window-colour: #0009;
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(36, 36, 36);
+}
+
+:root.theme-light {
+    --window-margin: 20px;
+    --window-colour: rgba(255, 255, 255, 0.6);
+    --window-blur: 5px;
+    --window-border-radius: 10px;
+    --sidebar-colour: rgb(209, 209, 209);
+}
+
+/* Roots */
+:root {
+    --user-name: "King";
+    --edited-message: " EDITED ✎ ";
+    --font-name: Poppins;
+    --font-size: 15px;
+
+    /* Radial status */
+    --rs-small-spacing: 0px;
+    --rs-large-spacing: 0px;
+    --rs-medium-spacing: 0px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3.5px;
+    --rs-large-width: 4.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #1df594;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-invisible-color: #636b75;
+    --rs-phone-visible: block;
+    --rs-phone-color: var(--rs-online-color);
+
+    /* Chillax colours */
+    --accentcolor: 251, 84, 84;
+    --accentcolorV2: #fb5454;
+
+    /* Settings modal */
+    --themelightsettingsmodalbackground: rgb(223, 223, 223);
+    --themedarksettingsmodalbackground: rgb(51, 49, 53);
+    --settingsmodalwidth: 960px;
+    --settingsmodalheight: 80vh;
+}
+
+/* Discord transparency */
+.theme-dark {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #9d9d9d;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(36, 36, 36);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+.theme-light {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: rgb(0, 0, 0);
+    --header-secondary: #3f3f3f;
+    --text-normal: #303030;
+    --text-muted: #333333;
+    --channels-default: #585b5e;
+    --interactive-normal: #3a3a3a;
+    --interactive-hover: #333333;
+    --interactive-active: rgb(0, 0, 0);
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(27, 27, 27);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/* Friends grid banner */
+.theme-dark {
+    --FG-cards-banner-background: transparent !important;
+}
+
+.theme-light {
+    --FG-cards-banner-background: transparent !important;
+}
+
+/* =========================================================
+   CUSTOM VISIBILITY / SIZE FIXES
+   ========================================================= */
+
+/* User-area controls: microphone, headphones, settings */
+.panels__5e434 .buttons__37e49 > * {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-flex !important;
+    transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+.panels__5e434 .buttons__37e49 > * svg,
+.panels__5e434 .buttons__37e49 > * svg * {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.panels__5e434 .buttons__37e49 > * svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.panels__5e434 .buttons__37e49 > *:hover {
+    opacity: 1 !important;
+    transform: translateY(-1px);
+}
+
+/* Message text */
+[class*="messageContent"] {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+}
+
+/* Channel names */
+[class*="channelName"] {
+    font-size: 15px !important;
+}
+
+/* Member/user names */
+[class*="member"] [class*="username"],
+[class*="member"] [class*="name"] {
+    font-size: 15px !important;
+}
+
+[class*="username"] {
+    font-size: 15px !important;
+}
+
+/* UI text */
+button[class*="button"] {
+    font-size: 14px;
+}
+
+/* Keep icon-only buttons from inheriting text sizing */
+button[class*="button"] svg {
+    font-size: initial !important;
+}
+
+/* =========================================================
+   END CUSTOM MODIFICATIONS
+   =========================================================
+*/
