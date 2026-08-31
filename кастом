@@ -675,7 +675,7 @@ html.theme-light .monaco-editor .margin {
 
 /*welcome text*/
 body:before {
-    content: "Greetings " var(--user-name) "!";
+    content: "ПРИВЕТ," var(--user-name) "!";
     z-index: 1000000000000000000000000;
     top: 0px;
     left: 52%;
@@ -854,7 +854,7 @@ html.theme-light {
 }
 
 #app-mount .info__2debe .line__2debe:last-child:after {
-    content: "Chillax " var(--cl-appearance) " 🎮";
+    content: "LARP? " var(--cl-appearance) " 🎮";
     display: block;
 }
 
@@ -3037,7 +3037,7 @@ button[class*="button"] svg,
 
 /* Roots */
 :root {
-    --user-name: "GOPAN LOX";
+    --user-name: "ПАЦАН!";
     --edited-message: " EDITED ✎ ";
     --font-name: Poppins;
     --font-size: 15px;
