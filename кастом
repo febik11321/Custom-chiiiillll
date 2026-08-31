@@ -2965,7 +2965,7 @@ html.theme-light .modeSelected__2ea32 .name__2ea32 {
 
 /* Normal Discord message text */
 [class*="messageContent"] {
-    font-size: 25px !important;
+    font-size: 35px !important;
     line-height: 1.45 !important;
 }
 
