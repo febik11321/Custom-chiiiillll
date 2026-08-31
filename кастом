@@ -2965,7 +2965,7 @@ html.theme-light .modeSelected__2ea32 .name__2ea32 {
 
 /* Normal Discord message text */
 [class*="messageContent"] {
-    font-size: 15px !important;
+    font-size: 25px !important;
     line-height: 1.45 !important;
 }
 
@@ -3037,7 +3037,7 @@ button[class*="button"] svg,
 
 /* Roots */
 :root {
-    --user-name: "King";
+    --user-name: "GOPAN LOX";
     --edited-message: " EDITED ✎ ";
     --font-name: Poppins;
     --font-size: 15px;
